@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
     return new MaterialApp(
       home: new RandomWords(),
       theme: new ThemeData(
-        primaryColor: Colors.blueGrey
+        primaryColor: Colors.white
       ),
     );
   }
@@ -31,7 +31,8 @@ class EnglishWordsState extends State<RandomWords> {
         appBar: new AppBar(
           title: const Text('123'),
           actions: <Widget>[
-            new IconButton(icon: const Icon(Icons.ac_unit), onPressed: _pushSaved)
+//            new IconButton(icon: const Icon(Icons.notifications), onPressed: _getWordList)
+            new IconButton(icon: const Icon(Icons.notifications_off), onPressed: _pushSaved)
           ],
         ),
         body: _getWordList(),
