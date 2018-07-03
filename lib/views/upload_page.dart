@@ -16,7 +16,7 @@ class _UploadPageState extends State<UploadPage> {
   File _image;
 
   Future getImage() async {
-    var image = await ImagePicker.pickImage(source: ImageSource.camera);
+    var image = await ImagePicker.pickImage(source: ImageSource.gallery);
 
     setState(() {
       _image = image;
@@ -28,7 +28,7 @@ class _UploadPageState extends State<UploadPage> {
     return new MaterialApp(
         home: new Scaffold(
           appBar: new AppBar(
-            title: new Text('读图上传图片'),
+            title: new Text('读图上传图'),
           ),
           body: new Center(
             child: _image == null ? new Text('No image selected.') : new Image.file(_image),
@@ -41,5 +41,4 @@ class _UploadPageState extends State<UploadPage> {
         ),
     );
   }
-
 }
