@@ -28,7 +28,7 @@ class _UploadPageState extends State<UploadPage> {
     return new MaterialApp(
         home: new Scaffold(
           appBar: new AppBar(
-            title: new Text('读图上传图'),
+            title: new Text('狗老师加油!'),
           ),
           body: new Center(
             child: _image == null ? new Text('No image selected.') : new Image.file(_image),
